@@ -62,7 +62,7 @@ int main()
 {
     //here we will call the age function to check if the user uppert han 18
     short Age = 0;
-        cout << "Enter Your age please ? : ";
+        cout << "Enter Your age please  : ";
         cin >> Age;
 
         if (IsAgeUpper18(Age))
@@ -71,5 +71,13 @@ int main()
         }
         else { cout << "Your Age Under 18 \n"; }
 
+        cout << endl << endl << endl;
+        //here we will call the battery procedure
+        short BatteryLevel = 0;
+        cout << "Enter the battery level  : ";
+        cin >> BatteryLevel;
+        BatteryIndicator(BatteryLevel);
+
+        
 }
 

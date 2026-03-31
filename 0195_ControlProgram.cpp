@@ -39,7 +39,7 @@ void BatteryIndicator(short BatterLevel)
 void CanDrive(bool HasDriverLicence, short Age)
 {
     //here we can use the function IsAgeUpper18() if we want
-    if (Age>=18)
+    if (Age >= 18)
     {
         if (HasDriverLicence)
         {
@@ -51,7 +51,7 @@ void CanDrive(bool HasDriverLicence, short Age)
             cout << "You cannot drive because you do not have  a driver Licence \n";
         }
     }
-    else 
+    else
     {
         cout << "You cannot drive because you are under 18\n";
     }
@@ -78,6 +78,16 @@ int main()
         cin >> BatteryLevel;
         BatteryIndicator(BatteryLevel);
 
-        
+        cout << endl << endl << endl;
+        //here we will call the CanDrive procedure so we can now if the user can drive or not 
+        short NewAge;
+        bool HasDriverLicence;
+        cout << "Enter Your Age Please : ";
+        cin >> NewAge;
+        cout << "Do You Have a Driver Licence , answer by 1 if yes and 0 if not : ";
+        cin >> HasDriverLicence;
+        CanDrive(HasDriverLicence, NewAge);
+        return;
+
 }
 

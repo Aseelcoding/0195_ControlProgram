@@ -60,7 +60,16 @@ void CanDrive(bool HasDriverLicence, short Age)
 }
 int main()
 {
-  
-    
+    //here we will call the age function to check if the user uppert han 18
+    short Age = 0;
+        cout << "Enter Your age please ? : ";
+        cin >> Age;
+
+        if (IsAgeUpper18(Age))
+        {
+            cout << "Your Age Upper or Equal 18 \n";
+        }
+        else { cout << "Your Age Under 18 \n"; }
+
 }
 

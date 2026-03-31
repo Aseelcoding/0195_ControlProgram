@@ -60,6 +60,9 @@ void CanDrive(bool HasDriverLicence, short Age)
 }
 int main()
 {
+    cout << "====================================\n";
+    cout << "      [1] AGE CHECK SYSTEM          \n";
+    cout << "====================================\n";
     //here we will call the age function to check if the user uppert han 18
     short Age = 0;
         cout << "Enter Your age please  : ";
@@ -72,6 +75,9 @@ int main()
         else { cout << "Your Age Under 18 \n"; }
 
         cout << endl << endl << endl;
+        cout << "====================================\n";
+        cout << "      [2] BATTERY INDICATOR         \n";
+        cout << "====================================\n";
         //here we will call the battery procedure
         short BatteryLevel = 0;
         cout << "Enter the battery level  : ";
@@ -79,6 +85,9 @@ int main()
         BatteryIndicator(BatteryLevel);
 
         cout << endl << endl << endl;
+        cout << "====================================\n";
+        cout << "      [3] DRIVING PERMISSION        \n";
+        cout << "====================================\n";
         //here we will call the CanDrive procedure so we can now if the user can drive or not 
         short NewAge;
         bool HasDriverLicence;
@@ -87,7 +96,6 @@ int main()
         cout << "Do You Have a Driver Licence , answer by 1 if yes and 0 if not : ";
         cin >> HasDriverLicence;
         CanDrive(HasDriverLicence, NewAge);
-        return;
 
 }
 

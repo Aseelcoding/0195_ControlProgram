@@ -34,6 +34,30 @@ void BatteryIndicator(short BatterLevel)
     }
 }
 
+//nested if Statements
+//Driver Licence or can drive a car?
+void CanDrive(bool HasDriverLicence, short Age)
+{
+    //here we can use the function IsAgeUpper18() if we want
+    if (Age>=18)
+    {
+        if (HasDriverLicence)
+        {
+            cout << "Yes , You can drive a car\n";
+       
+        }
+        else
+        {
+            cout << "You cannot drive because you do not have  a driver Licence \n";
+        }
+    }
+    else 
+    {
+        cout << "You cannot drive because you are under 18\n";
+    }
+
+   
+}
 int main()
 {
   
